@@ -303,19 +303,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    SCROLL EFFECT ONE JS INIT
-    ------------------------------------------------------------*/
-
-
-    var $rotateOne = $('#rotateOne');
-    var $win = $(window);
-    $win.on('scroll', function () {
-      var right = 3 - $win.scrollTop() * 0.01;
-      $rotateOne.css('transform', 'rotate(' + right + 'deg)');
-    });
-    /*--------------------------------------------------------------
     SCROLL EFFECT TWO JS INIT
     ------------------------------------------------------------*/
+
 
     var $rotateTwo = $('#rotatetwo');
     var $win = $(window);
@@ -330,7 +320,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     var $rotateThree = $('#rotatethree');
     var $win = $(window);
     $win.on('scroll', function () {
-      var right = 36 - $win.scrollTop() * 0.01;
+      var right = 41 - $win.scrollTop() * 0.01;
       $rotateThree.css('transform', 'rotate(' + right + 'deg)');
     });
     /*--------------------------------------------------------------

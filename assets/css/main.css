@@ -805,10 +805,10 @@
 }
 
 @media (min-width: 1200px) {
-  .site-header--menu-center .navbar {
+  /* .site-header--menu-center .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
+  } */
   .site-header--menu-center .menu-block-wrapper {
     position: absolute !important;
     left: 50%;
