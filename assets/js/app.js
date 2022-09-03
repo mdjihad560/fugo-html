@@ -45,51 +45,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     });
     /*--------------------------------------------------------------
-    COUNTER JS INIT
-    --------------------------------------------------------------*/
-
-    var nexto_counter = $('#nexto-counter');
-
-    if (nexto_counter.is_exist()) {
-      var a = 0;
-      var oTop = $(nexto_counter).offset().top - window.innerHeight;
-
-      if (a == 0 && $(window).scrollTop() > oTop) {
-        $('.nexto-counter').each(function () {
-          var $this = $(this),
-              countTo = $this.attr('data-percentage');
-          $({
-            countNum: $this.text()
-          }).animate({
-            countNum: countTo
-          }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function step() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function complete() {
-              $this.text(this.countNum);
-            }
-          });
-        });
-        a = 1;
-      }
-    }
-    /*--------------------------------------------------------------
     COUNTER TWO JS INIT
     --------------------------------------------------------------*/
 
+    var fugo_counter = $('#fugo-counter');
 
-    var nexto_counter = $('#nexto-counter2');
-
-    if (nexto_counter.is_exist()) {
+    if (fugo_counter.is_exist()) {
       var a = 0;
       $(window).scroll(function () {
-        var oTop = $(nexto_counter).offset().top - window.innerHeight;
+        var oTop = $(fugo_counter).offset().top - window.innerHeight;
 
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.nexto-counter').each(function () {
+          $('.fugo-counter').each(function () {
             var $this = $(this),
                 countTo = $this.attr('data-percentage');
             $({
@@ -212,7 +179,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         pauseOnHover: true,
         adaptiveHeight: true,
         responsive: [{
-          breakpoint: 1400,
+          breakpoint: 991,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -242,7 +209,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         pauseOnHover: true,
         adaptiveHeight: true,
         responsive: [{
-          breakpoint: 1400,
+          breakpoint: 991,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -259,6 +226,45 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     if (fugo_client_slider.is_exist()) {
       fugo_client_slider.slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 10000,
+        cssEase: 'linear',
+        pauseOnHover: true,
+        adaptiveHeight: true,
+        responsive: [{
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    }
+    /*--------------------------------------------------------------
+    NEXTO TEXT SLIDER
+    --------------------------------------------------------------*/
+
+
+    var fugo_client_slider2 = $('.fugo-client-slider2');
+
+    if (fugo_client_slider2.is_exist()) {
+      fugo_client_slider2.slick({
+        rows: 2,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -311,6 +317,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           }
         }, {
           breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    }
+    /*--------------------------------------------------------------
+    NEXTO TEXT SLIDER
+    --------------------------------------------------------------*/
+
+
+    var fugo_testimonial_slider2 = $('.fugo-testimonial-slider2');
+
+    if (fugo_testimonial_slider2.is_exist()) {
+      fugo_testimonial_slider2.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+          breakpoint: 991,
           settings: {
             slidesToShow: 1
           }
