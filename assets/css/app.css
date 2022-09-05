@@ -2574,6 +2574,10 @@ footer.fugo-foote2-section .fugo-default-content .fugo-app-btn-wrap {
 .fugo-btn.fugo-round-btn.active:hover {
   color: var(--gray-800);
 }
+.fugo-btn.small-btn {
+  border-radius: 10px;
+  padding: 15.5px 41px;
+}
 .fugo-btn.disabled, .fugo-btn:disabled {
   opacity: 1;
 }
@@ -3838,7 +3842,8 @@ a.fugo-popup img:hover {
 }
 .fugo-testimonial-author-data h5 {
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
+  line-height: 1;
   font-family: "Inter", sans-serif;
 }
 .fugo-testimonial-author-data span {
@@ -3890,6 +3895,34 @@ a.fugo-popup img:hover {
   .fugo-testimonial-btn {
     margin-top: 50px;
   }
+}
+
+.fugo-testimonial-card3 {
+  padding: 40px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(2, 2, 30, 0.1);
+}
+@media (max-width: 991px) {
+  .fugo-testimonial-card3 {
+    padding: 30px;
+  }
+}
+.fugo-testimonial-card3 ul {
+  margin-bottom: 30px;
+}
+.fugo-testimonial-card3 ul li {
+  display: inline-block;
+}
+.fugo-testimonial-card3 p {
+  color: var(--gray-800);
+}
+.fugo-testimonial-card3 .fugo-testimonial-author-wrap {
+  margin: 0;
+}
+.fugo-testimonial-author-data3 h5 {
+  line-height: 1;
+  margin: 0 0 7px;
 }
 
 .fugo-cta-section {
@@ -5365,6 +5398,16 @@ button#fugo-input-submit:hover {
 @media (max-width: 767px) {
   #map {
     height: 300px;
+  }
+}
+
+.fugo-center-btn {
+  text-align: center;
+  margin-top: 80px;
+}
+@media (max-width: 991px) {
+  .fugo-center-btn {
+    margin-top: 40px;
   }
 }
 
