@@ -2233,6 +2233,10 @@ blockquote {
   position: relative;
 }
 
+.max-w-full {
+  max-width: 100% !important;
+}
+
 /*1.1 layout css*/
 header.fugo-header-section {
   position: fixed;
@@ -3427,8 +3431,43 @@ a.fugo-app-btn:last-child {
   color: #fff;
 }
 
+.fugo-team-page {
+  padding-top: 110px;
+}
+@media (max-width: 991px) {
+  .fugo-team-page {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-team-page {
+    padding-top: 80px;
+  }
+}
+
 .fugo-team-wrap {
   margin-bottom: 24px;
+}
+.fugo-team-wrap.wrap2 {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  height: calc(100% - 24px);
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.fugo-team-wrap.wrap2 h4 {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .fugo-team-wrap.wrap2 {
+    height: 100%;
+  }
 }
 .fugo-team-thumb {
   position: relative;
@@ -3439,6 +3478,10 @@ a.fugo-app-btn:last-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.4s;
+}
+.fugo-team-thumb:hover img {
+  transform: scale(1.07) rotate(2deg);
 }
 .fugo-team-data {
   bottom: 20px;
@@ -3457,6 +3500,10 @@ a.fugo-app-btn:last-child {
 }
 .fugo-team-data h5 a {
   color: var(--gray-800);
+  transition: all 0.4s;
+}
+.fugo-team-data h5 a:hover {
+  color: var(--warning-500);
 }
 .fugo-team-data p {
   font-size: 14px;
@@ -3465,6 +3512,133 @@ a.fugo-app-btn:last-child {
 .fugo-team-data-wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.fugo-single-team-page {
+  padding: 120px 0 100px;
+}
+@media (max-width: 991px) {
+  .fugo-single-team-page {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-single-team-page {
+    padding: 80px 0;
+  }
+}
+
+.fugo-team-single-wrap {
+  padding: 60px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 1199px) {
+  .fugo-team-single-wrap {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-team-single-wrap {
+    padding: 30px;
+  }
+}
+.fugo-team-single-thumb {
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .fugo-team-single-thumb {
+    margin-bottom: 30px;
+  }
+}
+.fugo-team-single-thumb img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  .fugo-team-single-data {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .fugo-team-single-data {
+    margin: 0;
+  }
+}
+.fugo-team-single-data h2 {
+  margin-bottom: 10px;
+}
+.fugo-team-single-data span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--gray-800);
+}
+
+.fugo-team-single-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+@media (max-width: 479px) {
+  .fugo-team-single-footer {
+    display: block;
+  }
+}
+.fugo-team-single-footer .fugo-social-icon {
+  margin: 0;
+}
+@media (max-width: 479px) {
+  .fugo-team-single-footer .fugo-social-icon {
+    margin: 0 0 20px;
+  }
+}
+.fugo-team-single-footer .fugo-social-icon ul li a {
+  background-color: rgba(19, 17, 26, 0.05);
+}
+.fugo-team-single-footer .fugo-social-icon ul li a:hover {
+  background-color: var(--gray-800);
+}
+.fugo-team-single-footer .fugo-social-icon ul li a path {
+  fill: var(--gray-800);
+}
+.fugo-team-single-footer .fugo-social-icon ul li a:hover path {
+  fill: var(--warning-500);
+}
+
+.fugo-team-information {
+  margin-bottom: 24px;
+}
+.fugo-team-information-wrap {
+  padding-bottom: 70px;
+}
+.fugo-team-information ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.fugo-team-information ul li:before {
+  content: "";
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: var(--gray-800);
+}
+.fugo-team-information ul li:last-child {
+  margin-bottom: 0;
+}
+.fugo-team-information ul li a {
+  transition: all 0.4s;
+  color: rgba(19, 17, 26, 0.8);
+}
+.fugo-team-information ul li a:hover {
+  color: var(--warning-500);
 }
 
 .fugo-iconbox-wrap {
@@ -3661,6 +3835,10 @@ a.fugo-faq-btn {
   position: absolute;
   bottom: 0;
   color: var(--gray-800);
+  transition: all 0.4s;
+}
+a.fugo-faq-btn:hover {
+  color: var(--warning-500);
 }
 @media (max-width: 991px) {
   a.fugo-faq-btn {
@@ -3695,6 +3873,13 @@ a.fugo-faq-btn {
   color: var(--gray-800);
   background-color: transparent;
 }
+@media (max-width: 767px) {
+  .nexto-accordion-one .accordion-button {
+    line-height: 28px;
+    font-size: 18px;
+    padding: 20px;
+  }
+}
 .nexto-accordion-one .accordion-button:not(.collapsed) {
   box-shadow: none;
 }
@@ -3708,6 +3893,79 @@ a.fugo-faq-btn {
 }
 .nexto-accordion-one .accordion-body {
   padding: 0 50px 25px 30px;
+}
+@media (max-width: 767px) {
+  .nexto-accordion-one .accordion-body {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+.fugo-tab-menu {
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .fugo-tab-menu {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-tab-menu {
+    margin-bottom: 20px;
+  }
+}
+.fugo-tab-menu .nav {
+  justify-content: center;
+  max-width: 674px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .fugo-tab-menu .nav {
+    justify-content: space-between;
+  }
+}
+.fugo-tab-menu .nav-tabs {
+  border-bottom: 2px solid rgba(19, 17, 26, 0.1);
+}
+@media (max-width: 767px) {
+  .fugo-tab-menu .nav-tabs {
+    border: none;
+  }
+}
+.fugo-tab-menu .nav-tabs .nav-link {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  padding-bottom: 10px;
+  margin-right: 45px;
+  color: rgba(19, 17, 26, 0.8);
+  position: relative;
+}
+@media (max-width: 767px) {
+  .fugo-tab-menu .nav-tabs .nav-link {
+    margin: 10px;
+  }
+}
+.fugo-tab-menu .nav-tabs .nav-link:before {
+  content: "";
+  left: 0;
+  opacity: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: var(--warning-500);
+}
+.fugo-tab-menu .nav-tabs .nav-link:last-child {
+  margin-right: 0;
+}
+.fugo-tab-menu .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: var(--warning-500);
+}
+.fugo-tab-menu .nav-tabs .nav-link.active:before {
+  width: 100%;
+  opacity: 1;
 }
 
 .fugo-video-thumb {
@@ -3955,8 +4213,11 @@ a.fugo-popup img:hover {
 .fugo-social-icon {
   margin-top: 30px;
 }
+.fugo-social-icon ul {
+  display: flex;
+}
 .fugo-social-icon ul li {
-  margin: 0 5px;
+  margin: 0 7.5px;
   display: inline-block;
 }
 .fugo-social-icon ul li:first-child {
@@ -4001,6 +4262,10 @@ a.fugo-popup img:hover {
 }
 .fugo-social-icon2 ul li a path {
   fill: var(--gray-800);
+  transition: all 0.4s;
+}
+.fugo-social-icon2 ul li a:hover path {
+  fill: var(--warning-500);
 }
 
 .fugo-social-icon3 {
@@ -4230,6 +4495,48 @@ PRICING SECTION
 }
 .fugo-pricing-wrap.fugo-pricing-wrap {
   margin-bottom: 24px;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 {
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(19, 17, 26, 0.1);
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3:hover {
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-price {
+  margin-bottom: 15px;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 p.bottom_text {
+  margin: 0;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body {
+  border-top: 1px solid rgba(19, 17, 26, 0.1);
+  padding: 25px 0 35px;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 18px;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body ul li {
+  font-weight: 400;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body ul .disable {
+  opacity: 0.4;
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 a.fugo-pricing-btn {
+  margin: 0;
 }
 .fugo-pricing-header {
   margin-bottom: 15px;
