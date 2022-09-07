@@ -2723,124 +2723,45 @@ textarea::placeholder {
   opacity: 0.6;
 }
 
-.nexto-newsletter {
-  max-width: 430px;
+.fugo-newsletter {
+  max-width: 555px;
   position: relative;
   margin: 0 auto;
 }
-.nexto-newsletter input {
-  color: #13111A;
-  padding: 10px 150px 10px 25px !important;
-  background-color: var(--gray-10);
+.fugo-newsletter input {
+  padding: 15px 185px 15px 30px !important;
 }
-.nexto-newsletter.nexto-search input {
-  padding: 10px 150px 10px 50px !important;
-}
-
-button#nexto-search-btn {
-  position: absolute;
-  top: 16px;
-  z-index: 9;
-  left: 20px;
-  opacity: 0.5;
+@media (max-width: 575px) {
+  .fugo-newsletter input {
+    padding: 15px 30px !important;
+  }
 }
 
-#nexto-submit-btn {
+#fugo-submit-btn {
   font-weight: 700;
-  width: 130px;
-  height: 45px;
-  color: white;
+  width: 175px;
+  height: 50px;
   right: 5px;
   top: 5px;
+  font-size: 16px;
   transition: all 0.4s;
   border-radius: 10px;
   position: absolute;
-  background-size: 200% auto !important;
-  background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
+  color: var(--gray-800);
+  background-color: var(--warning-500);
 }
-#nexto-submit-btn:hover {
-  background-position: right center;
+#fugo-submit-btn:hover {
+  color: var(--gray-10);
+  background-color: var(--gray-800);
 }
 @media (max-width: 575px) {
-  #nexto-submit-btn {
+  #fugo-submit-btn {
     position: inherit;
     width: 100% !important;
     margin-top: 10px;
     right: 0;
     top: 0;
   }
-}
-
-.nexto-newsletter.nexto-newsletter2 {
-  max-width: 466px;
-  margin: 45px 0 0;
-}
-.nexto-newsletter.nexto-newsletter2 input {
-  padding: 10px 160px 10px 25px !important;
-}
-@media (max-width: 991px) {
-  .nexto-newsletter.nexto-newsletter2 {
-    max-width: 100%;
-  }
-}
-.nexto-newsletter.nexto-newsletter2 input {
-  border-radius: 3px;
-}
-.nexto-newsletter.nexto-newsletter2 #nexto-submit-btn {
-  border-radius: 3px;
-  right: 0;
-  top: 0;
-  height: 55px;
-  width: 150px;
-  border-radius: 0px 3px 3px 0px;
-  background: var(--gray-800);
-}
-
-.nexto-newsletter input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-.nexto-newsletter input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-.nexto-newsletter input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-.nexto-newsletter input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-.nexto-newsletter input::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-.nexto-newsletter input::placeholder {
-  /* Most modern browsers support this now. */
-  color: #13111A;
-  opacity: 0.5;
-}
-
-#nexto-form-submit-btn {
-  width: 180px;
-  height: 55px;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-  transition: all 0.4s;
-  background: linear-gradient(225deg, #0080ff 0, #7d41ea 46.35%, #ff00d4 100%);
-  border-radius: 10px;
 }
 
 .fugo-breadcrumb-section {
@@ -4231,6 +4152,8 @@ a.fugo-popup img:hover {
   height: 30px;
   display: flex;
   z-index: 0;
+  color: white;
+  font-size: 12px;
   border-radius: 100%;
   align-items: center;
   position: relative;
@@ -4239,15 +4162,16 @@ a.fugo-popup img:hover {
   justify-content: center;
   background-color: var(--gray-900);
 }
+.fugo-social-icon ul li a:hover {
+  color: var(--gray-800);
+  background-color: var(--warning-500);
+}
 .fugo-social-icon ul li a path {
   fill: var(--gray-10);
   transition: all 0.4s;
 }
 .fugo-social-icon ul li a:hover path {
   fill: var(--gray-800);
-}
-.fugo-social-icon ul li a:hover {
-  background-color: var(--warning-500);
 }
 
 .fugo-social-icon2 ul li {
@@ -4396,6 +4320,11 @@ PRICING SECTION
 .pricing-btn {
   margin-bottom: 60px;
 }
+@media (max-width: 991px) {
+  .pricing-btn {
+    margin-bottom: 30px;
+  }
+}
 
 [data-pricing-dynamic][data-value-active=yearly] .dynamic-value:before {
   display: inline-block;
@@ -4509,6 +4438,14 @@ PRICING SECTION
   border: 1px solid #fff;
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
 }
+.fugo-pricing-wrap.fugo-pricing-wrap3:hover a.fugo-pricing-btn {
+  border: 2px solid var(--warning-500);
+  background-color: var(--warning-500);
+}
+.fugo-pricing-wrap.fugo-pricing-wrap3 a.fugo-pricing-btn {
+  margin: 0;
+  padding: 13.5px;
+}
 .fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-price {
   margin-bottom: 15px;
 }
@@ -4528,15 +4465,14 @@ PRICING SECTION
   font-size: 16px;
   display: block;
   margin-bottom: 18px;
+  font-weight: 600;
 }
 .fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body ul li {
   font-weight: 400;
+  color: var(--gray-800);
 }
 .fugo-pricing-wrap.fugo-pricing-wrap3 .fugo-pricing-body ul .disable {
   opacity: 0.4;
-}
-.fugo-pricing-wrap.fugo-pricing-wrap3 a.fugo-pricing-btn {
-  margin: 0;
 }
 .fugo-pricing-header {
   margin-bottom: 15px;
@@ -4811,6 +4747,127 @@ a.fugo-pricing-btn.active {
   }
 }
 
+.fugo-error-content {
+  padding: 190px 0 110px;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .fugo-error-content {
+    padding: 150px 0 90px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-error-content {
+    padding: 130px 0 70px;
+  }
+}
+.fugo-error-content h1 {
+  font-size: 150px;
+  line-height: 176px;
+}
+@media (max-width: 991px) {
+  .fugo-error-content h1 {
+    font-size: 120px;
+    line-height: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-error-content h1 {
+    font-size: 100px;
+    line-height: 120px;
+  }
+}
+.fugo-error-content p {
+  margin-bottom: 55px;
+  padding: 0 30px;
+}
+@media (max-width: 991px) {
+  .fugo-error-content p {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-error-content p {
+    padding: 0;
+  }
+}
+
+.coming-soon-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coming-soon-column {
+  text-align: center;
+  margin: 0 auto;
+}
+.coming-soon-logo {
+  margin-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .coming-soon-logo {
+    margin-bottom: 50px;
+  }
+}
+.coming-soon-content {
+  max-width: 505px;
+  margin: 0 auto 80px;
+}
+@media (max-width: 991px) {
+  .coming-soon-content {
+    margin: 0 auto 40px;
+  }
+}
+
+.fugo-countdown-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .fugo-countdown-wrap {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .fugo-countdown-wrap {
+    flex-wrap: wrap;
+  }
+}
+.fugo-countdown-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-800);
+}
+@media (max-width: 767px) {
+  .fugo-countdown-item {
+    width: 150px;
+    height: 150px;
+  }
+}
+.fugo-countdown-item:nth-child(2), .fugo-countdown-item:nth-child(3), .fugo-countdown-item:nth-child(4) {
+  margin-left: -30px;
+}
+@media (max-width: 767px) {
+  .fugo-countdown-item:nth-child(2), .fugo-countdown-item:nth-child(3), .fugo-countdown-item:nth-child(4) {
+    margin-left: -15px;
+  }
+}
+.fugo-countdown-item h2.number {
+  margin-bottom: 5px;
+}
+.fugo-countdown-item p {
+  font-size: 16px;
+}
+
 .fugo-text-slider-section {
   padding: 40px 0;
   background-color: var(--warning-200);
@@ -5053,6 +5110,12 @@ a.fugo-pricing-btn.active {
   .fugo-innovative-services-section .fugo-default-content h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .fugo-innovative-services-thumb img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -5718,52 +5781,93 @@ button#fugo-input-submit:hover {
   }
 }
 
-.nexto-team-section.nexto-team-two.team-page {
-  padding: 0;
+.fugo-career-card {
+  padding: 29px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  transition: all 0.4s;
+  border: 1px solid rgba(19, 17, 26, 0.1);
+}
+.fugo-career-card:hover {
+  background: #FFFFFF;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+}
+.fugo-career-time {
+  padding: 20px 0 35px;
+}
+.fugo-career-time ul {
+  display: flex;
+  align-items: center;
+}
+.fugo-career-time ul li {
+  font-size: 16px;
+  margin-right: 18px;
+  display: inline-block;
+  color: var(--gray-800);
+}
+.fugo-career-time ul li:last-child {
+  margin-right: 0;
+}
+.fugo-career-time ul li img {
+  margin-right: 7px;
 }
 
-.team-page .nexto-breadcrumbs-data {
-  max-width: 880px;
+.fugo-single-career-item {
+  margin-bottom: 55px;
 }
-
-.nexto-team-column {
-  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
-  padding-bottom: 115px;
+.fugo-single-career-item:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 991px) {
-  .nexto-team-column {
-    padding-bottom: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .nexto-team-column {
-    padding-bottom: 80px;
+  .fugo-single-career-item {
+    margin-bottom: 30px;
   }
 }
 
-.nexto-team-button {
-  text-align: center;
-  margin-top: 40px;
+.fugo-career-sidebar {
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+.fugo-career-sidebar h4 {
+  margin-bottom: 25px;
 }
 @media (max-width: 991px) {
-  .nexto-team-button {
-    margin: 0;
+  .fugo-career-sidebar {
+    padding: 30px;
+    margin-top: 40px;
   }
 }
 
-.nexto-team-section.nexto-team-two.dark-version {
-  padding: 0 0 80px;
+.fugo-career-time2 {
+  margin-bottom: 55px;
 }
-
-.dark-version .nexto-team-data h4 {
-  color: #fff;
+@media (max-width: 991px) {
+  .fugo-career-time2 {
+    margin-bottom: 30px;
+  }
 }
-.dark-version p {
-  margin-bottom: 20px;
-  color: #fff !important;
+.fugo-career-time2 ul li {
+  position: relative;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 15px;
 }
-.dark-version .nexto-social-icon {
-  margin-top: 0;
+.fugo-career-time2 ul li:last-child {
+  margin-bottom: 0;
+}
+.fugo-career-time2 ul li span {
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  color: var(--gray-800);
+}
+.fugo-career-time2 ul li img {
+  left: 0;
+  top: 2px;
+  position: absolute;
 }
 
 /*1.4 themes css*/
