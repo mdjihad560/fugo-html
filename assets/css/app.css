@@ -4082,9 +4082,9 @@ a.fugo-popup img:hover {
   border-radius: 10px;
   border: 1px solid rgba(2, 2, 30, 0.1);
 }
-@media (max-width: 991px) {
+@media (max-width: 1399px) {
   .fugo-testimonial-card3 {
-    padding: 30px;
+    padding: 29px;
   }
 }
 .fugo-testimonial-card3 ul {
@@ -4498,9 +4498,13 @@ PRICING SECTION
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 11px;
+  position: relative;
+  padding-left: 30px;
 }
 .fugo-pricing-body ul li img {
-  margin-right: 14px;
+  left: 0;
+  top: 7px;
+  position: absolute;
 }
 .fugo-pricing-body ul li:last-child {
   margin-bottom: 0;
@@ -4861,8 +4865,21 @@ a.fugo-pricing-btn.active {
     margin-left: -15px;
   }
 }
-.fugo-countdown-item h2.number {
+.fugo-countdown-item .number {
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--gray-800);
+}
+@media (max-width: 991px) {
+  .fugo-countdown-item .number {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-countdown-item .number {
+    font-size: 36px;
+  }
 }
 .fugo-countdown-item p {
   font-size: 16px;
@@ -5299,6 +5316,9 @@ a.fugo-pricing-btn.active {
 }
 .fugo-blog-content h5 a {
   color: var(--gray-800);
+}
+.fugo-blog-content h5 a:hover {
+  color: var(--warning-500);
 }
 .fugo-blog-content p {
   font-size: 16px;
@@ -5826,10 +5846,12 @@ button#fugo-input-submit:hover {
 }
 
 .fugo-career-sidebar {
+  top: 100px;
   padding: 40px;
+  border-radius: 10px;
+  position: sticky;
   background: #FFFFFF;
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
 }
 .fugo-career-sidebar h4 {
   margin-bottom: 25px;
@@ -5838,6 +5860,7 @@ button#fugo-input-submit:hover {
   .fugo-career-sidebar {
     padding: 30px;
     margin-top: 40px;
+    position: static;
   }
 }
 
@@ -5868,6 +5891,252 @@ button#fugo-input-submit:hover {
   left: 0;
   top: 2px;
   position: absolute;
+}
+
+.fugo-gallery-menu {
+  text-align: center;
+  max-width: 832px;
+  margin: 0 auto 80px;
+  border-bottom: 2px solid rgba(19, 17, 26, 0.1);
+}
+@media (max-width: 991px) {
+  .fugo-gallery-menu {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-gallery-menu {
+    margin-bottom: 30px;
+    border: none;
+  }
+}
+.fugo-gallery-menu ul li {
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+  transition: all 0.4s;
+  color: rgba(19, 17, 26, 0.8);
+}
+@media (max-width: 991px) {
+  .fugo-gallery-menu ul li {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .fugo-gallery-menu ul li {
+    margin-bottom: 10px;
+  }
+}
+.fugo-gallery-menu ul li.active {
+  color: var(--warning-500);
+}
+.fugo-gallery-menu ul li.active:before {
+  content: "";
+  left: 0;
+  opacity: 1;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  transition: all 0.4s;
+  position: absolute;
+  background-color: var(--warning-500);
+}
+.fugo-gallery-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.fugo-gallery-wrap {
+  margin-left: -24px;
+}
+.fugo-gallery-item {
+  overflow: hidden;
+  position: relative;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.fugo-gallery-item.item2 {
+  margin-bottom: 55px;
+}
+@media (max-width: 991px) {
+  .fugo-gallery-item.item2 {
+    margin-bottom: 30px;
+  }
+}
+.fugo-gallery-item.item2:before {
+  content: none;
+}
+.fugo-gallery-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.fugo-gallery-item:before {
+  content: "";
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+  transition: all 0.4s;
+  background: linear-gradient(180deg, rgba(19, 17, 26, 0) 0%, #13111A 100%);
+}
+.fugo-gallery-item:hover:before {
+  opacity: 1;
+}
+.fugo-gallery-item:hover .fugo-gallery-data {
+  opacity: 1;
+  visibility: visible;
+  left: 30px;
+}
+.fugo-gallery-data {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.fugo-gallery-data h4, .fugo-gallery-data h5 {
+  margin: 0 0 8px;
+}
+.fugo-gallery-data h4 a, .fugo-gallery-data h5 a {
+  color: #fff;
+}
+.fugo-gallery-data h5 {
+  margin: 0 0 5px;
+}
+.fugo-gallery-data p {
+  color: #fff;
+  opacity: 0.8;
+}
+.fugo-gallery-data2 {
+  margin-top: 30px;
+  position: relative;
+}
+.fugo-gallery-data2 h4 {
+  margin: 0 0 5px;
+}
+.fugo-gallery-data2 h4 a {
+  color: var(--gray-800);
+}
+.fugo-gallery-data2 p {
+  margin: 0;
+}
+.fugo-gallery-data2 a.fugo-icon-btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.fugo-gallery-data2 a.fugo-icon-btn img {
+  width: auto;
+}
+
+.fugo-grid-item.fugo-grid-item-w2 {
+  max-width: 100%;
+}
+
+.fugo-portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+@media (max-width: 991px) {
+  .fugo-portfolio-btn {
+    margin-top: 26px;
+  }
+}
+
+.fugo-gallery-wrap3 {
+  max-width: 1075px;
+  margin: 0 auto;
+}
+.fugo-gallery-thumb {
+  margin-bottom: 25px;
+}
+.fugo-gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.fugo-gallery-data3 h4 {
+  margin-bottom: 10px;
+}
+.fugo-gallery-data3 p {
+  margin-bottom: 20px;
+}
+
+.border_bottom {
+  padding-bottom: 50px;
+  margin-bottom: 55px;
+  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+}
+@media (max-width: 991px) {
+  .border_bottom {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.fugo-gallery-data4 {
+  margin-bottom: 55px;
+}
+@media (max-width: 991px) {
+  .fugo-gallery-data4 {
+    margin-bottom: 35px;
+  }
+}
+.fugo-gallery-data4 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fugo-gallery-data4 ul li {
+  color: var(--gray-800);
+}
+.fugo-gallery-data4 ul li span {
+  display: block;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .fugo-gallery-data4 ul li {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+  }
+}
+.fugo-gallery-data4 .fugo-team-information ul {
+  display: block;
+}
+
+.fugo-portfolio-ratated-project {
+  padding-top: 55px;
+  border-top: 1px solid rgba(19, 17, 26, 0.1);
+}
+@media (max-width: 991px) {
+  .fugo-portfolio-ratated-project {
+    padding-top: 35px;
+  }
+}
+.fugo-portfolio-ratated-project p {
+  margin-right: 220px;
+}
+@media (max-width: 991px) {
+  .fugo-portfolio-ratated-project p {
+    margin-right: 0;
+  }
+}
+.fugo-portfolio-ratated-project .fugo-gallery-item {
+  margin-left: 0;
+}
+.fugo-portfolio-ratated-project .fugo-gallery-data p {
+  font-size: 14px;
 }
 
 /*1.4 themes css*/

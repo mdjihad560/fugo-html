@@ -1,25 +1,25 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 (function ($) {
   "use strict";
   /*------------------------------------------------------------------
   [Table of contents]
-    STICKY MENU JS INIT
-  COUNTER JS INIT
-  COUNTER TWO JS INIT
-  NEXTO SLIDER ONE
-  NEXTO SLIDER TWO
-  NEXTO TEXT SLIDER
-  NEXTO SWIPER SLIDER JS INIT
-  SCROLL EFFECT ONE JS INIT
-  SCROLL EFFECT TWO JS INIT
-  SCROLL EFFECT THREE JS INIT
-  MAGNIFIC POPUP JS INIT
-  CARD LIKE JS INIT
-  FOUR COLUMN FILTER JS INIT
-  TWO COLUMN FILTER JS INIT
+  FUGO STICKY MENU JS INIT
+  FUGO COUNTER JS INIT
+  FUGO TEXT SLIDER
+  FUGO TEXT SLIDER 2
+  FUGO CLIENT SLIDER
+  FUGO CLIENT SLIDER 2
+  FUGO TESTIMONIAL SLIDER
+  FUGO TESTIMONIAL SLIDER 2
+  FUGO PRICING TABLE JS INIT
+  FUGO SCROLL EFFECT TWO JS INIT 01
+  FUGO SCROLL EFFECT TWO JS INIT 02
+  FUGO MAGNIFIC POPUP JS INIT
+  FUGO GALLERY MASONAY FILTER JS 01
+  FUGO GALLERY MASONAY FILTER JS 02
+  FUGO GALLERY MASONAY FILTER JS 03
+  FUGO MAP JS
   
   -------------------------------------------------------------------*/
 
@@ -35,7 +35,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
   $(function () {
     /*--------------------------------------------------------------
-    STICKY MENU JS INIT
+    FUGO STICKY MENU JS INIT
     --------------------------------------------------------------*/
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > 50) {
@@ -45,7 +45,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     });
     /*--------------------------------------------------------------
-    COUNTER TWO JS INIT
+    FUGO COUNTER JS INIT
     --------------------------------------------------------------*/
 
     var fugo_counter = $('#fugo-counter');
@@ -79,87 +79,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO SLIDER ONE
-    --------------------------------------------------------------*/
-
-
-    var nexto_slider_one = $('.nexto-slider-one');
-
-    if (nexto_slider_one.is_exist()) {
-      var _nexto_slider_one$sli;
-
-      nexto_slider_one.slick((_nexto_slider_one$sli = {
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: false
-      }, _defineProperty(_nexto_slider_one$sli, "autoplay", true), _defineProperty(_nexto_slider_one$sli, "autoplaySpeed", 2000), _defineProperty(_nexto_slider_one$sli, "prevArrow", '<button class="slide-arrow prev-arrow"></button>'), _defineProperty(_nexto_slider_one$sli, "nextArrow", '<button class="slide-arrow next-arrow"></button>'), _defineProperty(_nexto_slider_one$sli, "responsive", [{
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }, {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }]), _nexto_slider_one$sli));
-    }
-    /*--------------------------------------------------------------
-    NEXTO SLIDER TWO
-    --------------------------------------------------------------*/
-
-
-    var nexto_slider_two = $('.nexto-slider-two');
-
-    if (nexto_slider_two.is_exist()) {
-      nexto_slider_two.slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 10000,
-        cssEase: 'linear',
-        pauseOnHover: true,
-        adaptiveHeight: true,
-        responsive: [{
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true
-          }
-        }, {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }, {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false
-          }
-        }]
-      });
-    }
-    /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO TEXT SLIDER
     --------------------------------------------------------------*/
 
 
@@ -188,7 +108,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO TEXT SLIDER 2
     --------------------------------------------------------------*/
 
 
@@ -218,7 +138,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO CLIENT SLIDER
     --------------------------------------------------------------*/
 
 
@@ -256,7 +176,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO CLIENT SLIDER 2
     --------------------------------------------------------------*/
 
 
@@ -295,7 +215,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO TESTIMONIAL SLIDER
     --------------------------------------------------------------*/
 
 
@@ -324,7 +244,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    FUGO TESTIMONIAL SLIDER 2
     --------------------------------------------------------------*/
 
 
@@ -348,7 +268,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    PRICING TABLE JS INIT
+    FUGO PRICING TABLE JS INIT
     ------------------------------------------------------------*/
     // Table BTN Trigger
 
@@ -375,23 +295,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     });
     /*--------------------------------------------------------------
-    NEXTO SWIPER SLIDER JS INIT
+    FUGO SCROLL EFFECT TWO JS INIT 01
     ------------------------------------------------------------*/
-
-    var swiper_slider = $('.nexto-swiper-slider');
-
-    if (swiper_slider.is_exist()) {
-      swiper_slider = new Swiper(".nexto-swiper-slider", {
-        loop: true,
-        effect: "cards",
-        grabCursor: true,
-        autoplay: true
-      });
-    }
-    /*--------------------------------------------------------------
-    SCROLL EFFECT TWO JS INIT
-    ------------------------------------------------------------*/
-
 
     var $rotateTwo = $('#rotatetwo');
     var $win = $(window);
@@ -400,7 +305,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       $rotateTwo.css('transform', 'rotate(' + right + 'deg)');
     });
     /*--------------------------------------------------------------
-    SCROLL EFFECT THREE JS INIT
+    FUGO SCROLL EFFECT TWO JS INIT 02
     ------------------------------------------------------------*/
 
     var $rotateThree = $('#rotatethree');
@@ -410,7 +315,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       $rotateThree.css('transform', 'rotate(' + right + 'deg)');
     });
     /*--------------------------------------------------------------
-    MAGNIFIC POPUP JS INIT
+    FUGO MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
 
     var popup_youtube = $('.fugo-popup');
@@ -421,17 +326,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         mainClass: 'mfp-fade'
       });
     }
-    /*--------------------------------------------------------------
-    CARD LIKE JS INIT
-    ------------------------------------------------------------*/
-
-
-    var nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
-    nextoBtnTigger.forEach(function (linkbtn) {
-      linkbtn.addEventListener('click', function () {
-        linkbtn.classList.toggle("dark-btn");
-      });
-    });
   });
   /*End document ready*/
 
@@ -439,12 +333,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
   $(window).on("load", function () {
     /*--------------------------------------------------------------
-    FOUR COLUMN FILTER JS INIT
+    FUGO GALLERY MASONAY FILTER JS 01
     ------------------------------------------------------------*/
-    var nexto_filter = $('#nexto-four-column');
+    var fugo_gallery_masonay1 = $('#fugo-gallery-masonay1');
 
-    if (nexto_filter.is_exist()) {
-      var $container = $(nexto_filter),
+    if (fugo_gallery_masonay1.is_exist()) {
+      var $container = $(fugo_gallery_masonay1),
           colWidth = function colWidth() {
         var w = $container.width(),
             columnNum = 1,
@@ -457,20 +351,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         } else if (w > 600) {
           columnNum = 2;
         } else if (w > 450) {
-          columnNum = 1;
+          columnNum = 2;
         } else if (w > 385) {
           columnNum = 1;
         }
 
         columnWidth = Math.floor(w / columnNum);
-        $container.find('.collection-grid-item').each(function () {
+        $container.find('.fugo-grid-item').each(function () {
           var $item = $(this),
-              multiplier_w = $item.attr('class').match(/collection-grid-item-w(\d)/),
-              multiplier_h = $item.attr('class').match(/collection-grid-item-h(\d)/),
+              multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
+              multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
               width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
               height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.5;
           $item.css({
-            width: width //height: height
+            width: width // height: height
 
           });
         });
@@ -479,7 +373,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           isotope = function isotope() {
         $container.isotope({
           resizable: false,
-          itemSelector: '.collection-grid-item',
+          itemSelector: '.fugo-grid-item',
           masonry: {
             columnWidth: colWidth(),
             gutterWidth: 0
@@ -489,7 +383,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       isotope();
       $(window).resize(isotope);
-      var $optionSets = $('.nexto-portfolio-menu .option-set'),
+      var $optionSets = $('.fugo-gallery-menu .option-set'),
           $optionLinks = $optionSets.find('li');
       $optionLinks.click(function () {
         var $this = $(this);
@@ -516,14 +410,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
     /*--------------------------------------------------------------
-    TWO COLUMN FILTER JS INIT
+    FUGO GALLERY MASONAY FILTER JS 02
     ------------------------------------------------------------*/
 
 
-    var nexto_filter = $('#nexto-two-column');
+    var fugo_gallery_masonay2 = $('#fugo-gallery-masonay2');
 
-    if (nexto_filter.is_exist()) {
-      var $container = $(nexto_filter),
+    if (fugo_gallery_masonay2.is_exist()) {
+      var $container = $(fugo_gallery_masonay2),
           colWidth = function colWidth() {
         var w = $container.width(),
             columnNum = 1,
@@ -542,14 +436,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
 
         columnWidth = Math.floor(w / columnNum);
-        $container.find('.collection-grid-item').each(function () {
+        $container.find('.fugo-grid-item').each(function () {
           var $item = $(this),
-              multiplier_w = $item.attr('class').match(/collection-grid-item-w(\d)/),
-              multiplier_h = $item.attr('class').match(/collection-grid-item-h(\d)/),
+              multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
+              multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
               width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
               height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.5;
           $item.css({
-            width: width //height: height
+            width: width // height: height
 
           });
         });
@@ -558,7 +452,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           isotope = function isotope() {
         $container.isotope({
           resizable: false,
-          itemSelector: '.collection-grid-item',
+          itemSelector: '.fugo-grid-item',
           masonry: {
             columnWidth: colWidth(),
             gutterWidth: 0
@@ -568,7 +462,86 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       isotope();
       $(window).resize(isotope);
-      var $optionSets = $('.nexto-portfolio-menu .option-set'),
+      var $optionSets = $('.fugo-gallery-menu .option-set'),
+          $optionLinks = $optionSets.find('li');
+      $optionLinks.click(function () {
+        var $this = $(this);
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.active').removeClass('active');
+        $this.addClass('active'); // make option object dynamically, i.e. { filter: '.my-filter-class' }
+
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value'); // parse 'false' as false boolean
+
+        value = value === 'false' ? false : value;
+        options[key] = value;
+
+        if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+          // changes in layout modes need extra logic
+          changeLayoutMode($this, options);
+        } else {
+          // creativewise, apply new options
+          $container.isotope(options);
+        }
+
+        return false;
+      });
+    }
+    /*--------------------------------------------------------------
+    FUGO GALLERY MASONAY FILTER JS 03
+    ------------------------------------------------------------*/
+
+
+    var fugo_gallery_masonay3 = $('#fugo-gallery-masonay3');
+
+    if (fugo_gallery_masonay3.is_exist()) {
+      var $container = $(fugo_gallery_masonay3),
+          colWidth = function colWidth() {
+        var w = $container.width(),
+            columnNum = 1,
+            columnWidth = 0;
+
+        if (w > 1200) {
+          columnNum = 1;
+        } else if (w > 900) {
+          columnNum = 1;
+        } else if (w > 600) {
+          columnNum = 1;
+        } else if (w > 450) {
+          columnNum = 1;
+        } else if (w > 385) {
+          columnNum = 1;
+        }
+
+        columnWidth = Math.floor(w / columnNum);
+        $container.find('.fugo-grid-item').each(function () {
+          var $item = $(this),
+              multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
+              multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
+              width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
+              height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.5;
+          $item.css({
+            width: width // height: height
+
+          });
+        });
+        return columnWidth;
+      },
+          isotope = function isotope() {
+        $container.isotope({
+          resizable: false,
+          itemSelector: '.fugo-grid-item',
+          masonry: {
+            columnWidth: colWidth(),
+            gutterWidth: 0
+          }
+        });
+      };
+
+      isotope();
+      $(window).resize(isotope);
+      var $optionSets = $('.fugo-gallery-menu .option-set'),
           $optionLinks = $optionSets.find('li');
       $optionLinks.click(function () {
         var $this = $(this);
@@ -597,7 +570,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }); // End window LODE
 
   /*--------------------------------------------------------------
-  fugo GOOGLE MAP JS
+  FUGO MAP JS
   ------------------------------------------------------------*/
 
   var google_map = $('#map');

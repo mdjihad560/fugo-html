@@ -25,10 +25,20 @@ setInterval(() => {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Insert the result data into individual countdown boxes
-  countdownDays.innerHTML = days;
-  countdownHours.innerHTML = hours;
-  countdownMinutes.innerHTML = minutes;
-  countdownSeconds.innerHTML = seconds;
+  if(countdownDays) {
+    countdownDays.innerHTML = days;
+  }
+  if(countdownHours) {
+    countdownHours.innerHTML = hours;
+  }
+  if(countdownMinutes) {
+    countdownMinutes.innerHTML = minutes;
+  }
+  if(countdownSeconds) {
+    countdownSeconds.innerHTML = seconds;
+  }
+  
+  
 }, 1000);
 
 
