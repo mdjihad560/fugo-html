@@ -4016,11 +4016,12 @@ a.fugo-popup img:hover {
 .fugo-testimonial-card h4 {
   font-size: 20px;
   line-height: 28px;
+  font-weight: 700;
   margin-bottom: 15px;
   font-family: "Inter", sans-serif;
 }
 .fugo-testimonial-card p {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gray-800);
 }
 .fugo-testimonial-author-wrap {
@@ -4924,7 +4925,7 @@ a.fugo-pricing-btn.active {
 
 .fugo-go-top {
   position: fixed;
-  bottom: 20%;
+  bottom: 10%;
   right: 3%;
   z-index: 0;
   z-index: 99;
@@ -4946,6 +4947,15 @@ a.fugo-pricing-btn.active {
 }
 .fugo-go-top img {
   transform: rotate(-90deg);
+}
+
+.fugo-btn-wrap {
+  margin-top: 55px;
+}
+@media (max-width: 991px) {
+  .fugo-btn-wrap {
+    margin-top: 40px;
+  }
 }
 
 .fugo-text-slider-section {
