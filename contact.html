@@ -63,17 +63,14 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a href="about-us.html" class="nav-link-item">About Us</a>
+              </li>
               <li class="nav-item nav-item-has-children">
                 <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
                     <a href="about-us.html">About Us</a>
-                  </li>
-                  <li class="sub-menu--item">
-                    <a href="faq.html">faq</a>
-                  </li>
-                  <li class="sub-menu--item">
-                    <a href="testimonial.html">testimonial</a>
                   </li>
                   <li class="sub-menu--item nav-item-has-children">
                     <a href="#" data-menu-get="h3" class="drop-trigger">blog <i class="fas fa-angle-down"></i></a>
@@ -152,18 +149,30 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="sub-menu--item">
-                    <a href="error-404.html">Error 404</a>
-                  </li>
-                  <li class="sub-menu--item">
-                    <a href="coming-soon.html">Coming Soon</a>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Account<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-9">
+                      <li class="sub-menu--item">
+                        <a href="error-404.html">Error 404</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="faq.html">faq</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="testimonial.html">testimonial</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="coming-soon.html">Coming Soon</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
               <li class="nav-item nav-item-has-children">
                 <a href="#" class="nav-link-item drop-trigger">Blog <i
                   class="fas fa-angle-down"></i></a>
-                <ul class="sub-menu" id="submenu-9">
+                <ul class="sub-menu" id="submenu-10">
                   <li class="sub-menu--item">
                     <a href="blog.html">blog sidebar</a>
                   </li>
@@ -219,13 +228,13 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-5 col-lg-6 col-md-10">
-          <div class="fugo-default-content">
+          <div class="fugo-default-content contact-page">
             <h2>Have any questions? We will talk to you sincerely anytime</h2>
             <p>If you have any questions about subscription or usage, please fill out the form and our team will get back to you within 24 hours.</p>
             <div class="fugo-contact-info">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="tel:123">
                     <div class="fugo-contact-info-icon">
                       <img src="assets/images/social/call.svg" alt="">
                     </div>
@@ -234,7 +243,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="mailto:name@email.com">
                     <div class="fugo-contact-info-icon">
                       <img src="assets/images/social/email.svg" alt="">
                     </div>
@@ -449,6 +458,10 @@
 
   <!-- End -->
 
+  <div class="fugo-go-top">
+    <img src="assets/images/svg/arrow-black-right.svg" alt="">
+  </div>
+
 
   <!-- Footer  -->
 
@@ -480,11 +493,11 @@
           <div class="fugo-footer-menu fugo-custom-margin">
             <span>Company</span>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Blog post</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="career.html">Careers</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="single-blog.html">Blog post</a></li>
             </ul>
           </div>
         </div>
@@ -492,8 +505,8 @@
           <div class="fugo-footer-menu">
             <span>Contact</span>
             <ul>
-              <li><a href="">+088-234-6534</a></li>
-              <li><a href="">example@gmail.com</a></li>
+              <li><a href="tel:123">+088-234-6534</a></li>
+              <li><a href="mailto:name@email.com">example@gmail.com</a></li>
             </ul>
           </div>
           <div class="fugo-social-icon">
@@ -537,6 +550,14 @@
 
 
 
+  <div class="fugo-preloader">
+    <div class="fugo-spinner">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" />
+      </svg>
+    </div>
+    <div class="fugo-title">loading...</div>
+  </div>
 
   <!-- scripts -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>

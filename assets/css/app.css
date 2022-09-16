@@ -2249,7 +2249,8 @@ header.fugo-header-section {
 
 header.fugo-header-section.sticky-menu {
   padding: 10px 0;
-  background-color: #F0E9E1;
+  background-color: #fff;
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.06);
 }
 
 .site-menu-main .nav-link-item {
@@ -2393,7 +2394,7 @@ footer.fugo-foote2-section .fugo-default-content .fugo-app-btn-wrap {
 }
 
 .fugo-footer-middle {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 991px) {
@@ -2418,7 +2419,7 @@ footer.fugo-foote2-section .fugo-default-content .fugo-app-btn-wrap {
   }
 }
 .fugo-footer-menu2 ul li {
-  margin: 0 15px;
+  margin: 0 15px 10px;
   display: inline-block;
 }
 .fugo-footer-menu2 ul li:first-child {
@@ -2576,7 +2577,9 @@ footer.fugo-foote2-section .fugo-default-content .fugo-app-btn-wrap {
   background-color: var(--success-500);
 }
 .fugo-btn.fugo-round-btn.active:hover {
-  color: var(--gray-800);
+  color: var(--gray-10);
+  background-color: var(--gray-800);
+  border: 2px solid var(--gray-800);
 }
 .fugo-btn.small-btn {
   border-radius: 10px;
@@ -2736,6 +2739,11 @@ textarea::placeholder {
     padding: 15px 30px !important;
   }
 }
+.fugo-newsletter p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgba(19, 17, 26, 0.5);
+}
 
 #fugo-submit-btn {
   font-weight: 700;
@@ -2779,9 +2787,20 @@ textarea::placeholder {
     padding: 130px 0 60px;
   }
 }
+@media (max-width: 479px) {
+  .fugo-breadcrumb-section {
+    padding: 100px 0 60px;
+  }
+}
 
 .breadcrumbs {
   text-align: center;
+}
+@media (max-width: 575px) {
+  .breadcrumbs h1 {
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
 }
 
 .breadcrumb {
@@ -3572,6 +3591,7 @@ a.fugo-app-btn:last-child {
 @media (max-width: 991px) {
   .fugo-iconbox-wrap {
     padding: 30px;
+    background-color: var(--warning-300);
   }
 }
 @media (max-width: 479px) {
@@ -3617,9 +3637,6 @@ a.fugo-app-btn:last-child {
   transition: all 0.4s;
   margin-left: 7px;
 }
-.fugo-icon-btn:hover img {
-  margin-left: 10px;
-}
 
 .fugo-iconbox-wrap2 {
   padding: 30px;
@@ -3644,6 +3661,7 @@ a.fugo-app-btn:last-child {
 @media (max-width: 991px) {
   .fugo-iconbox-wrap3 {
     padding: 30px;
+    background-color: #0D0D0E;
   }
 }
 .fugo-iconbox-icon3 {
@@ -3716,6 +3734,9 @@ a.fugo-app-btn:last-child {
   padding-bottom: 40px;
   border-bottom: 1px solid var(--gray-800);
 }
+.fugo-accordion-item h4 {
+  font-weight: bold;
+}
 .fugo-accordion-item:last-child {
   margin: 0;
   padding: 0;
@@ -3755,8 +3776,10 @@ a.fugo-faq-btn {
   font-size: 16px;
   position: absolute;
   bottom: 0;
+  font-weight: 700;
   color: var(--gray-800);
   transition: all 0.4s;
+  text-decoration: underline;
 }
 a.fugo-faq-btn:hover {
   color: var(--warning-500);
@@ -4035,6 +4058,11 @@ a.fugo-popup img:hover {
   margin: 0 12px;
   padding: 29px;
 }
+@media (max-width: 767px) {
+  .fugo-testimonial-slider .fugo-testimonial-card {
+    margin: 0;
+  }
+}
 
 .fugo-testimonial-card2 {
   padding: 40px;
@@ -4065,6 +4093,11 @@ a.fugo-popup img:hover {
     margin: 0 20px;
   }
 }
+@media (max-width: 991px) {
+  .fugo-testimonial-slider2 .fugo-testimonial-card2 {
+    margin: 0;
+  }
+}
 
 .fugo-testimonial-btn {
   margin-top: 80px;
@@ -4074,6 +4107,9 @@ a.fugo-popup img:hover {
   .fugo-testimonial-btn {
     margin-top: 50px;
   }
+}
+.fugo-testimonial-btn .fugo-btn.fugo-header-btn {
+  margin-left: 0;
 }
 
 .fugo-testimonial-card3 {
@@ -4846,6 +4882,7 @@ a.fugo-pricing-btn.active {
   height: 200px;
   border-radius: 100%;
   display: flex;
+  padding-top: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -4866,7 +4903,7 @@ a.fugo-pricing-btn.active {
   }
 }
 .fugo-countdown-item .number {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 48px;
   color: var(--gray-800);
@@ -4883,6 +4920,32 @@ a.fugo-pricing-btn.active {
 }
 .fugo-countdown-item p {
   font-size: 16px;
+}
+
+.fugo-go-top {
+  position: fixed;
+  bottom: 20%;
+  right: 3%;
+  z-index: 0;
+  z-index: 99;
+  display: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+.fugo-go-top:before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: var(--warning-500);
+  transform: translate(-50%, -50%);
+}
+.fugo-go-top img {
+  transform: rotate(-90deg);
 }
 
 .fugo-text-slider-section {
@@ -5086,6 +5149,7 @@ a.fugo-pricing-btn.active {
 
 .fugo-trading-section2 {
   padding: 120px 0 150px;
+  overflow: hidden;
   background-color: var(--warning-100);
 }
 @media (max-width: 1399px) {
@@ -5311,6 +5375,9 @@ a.fugo-pricing-btn.active {
 .fugo-blog-meta ul li a {
   color: rgba(19, 17, 26, 0.8);
 }
+.fugo-blog-meta ul li a:hover {
+  color: var(--warning-500);
+}
 .fugo-blog-content h5 {
   margin-bottom: 7px;
 }
@@ -5391,7 +5458,7 @@ a.fugo-pricing-btn.active {
 }
 
 .fugo-recent-post-item {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .fugo-recent-post-item:last-child {
   margin-bottom: 0;
@@ -5400,7 +5467,7 @@ a.fugo-pricing-btn.active {
   display: block;
 }
 .fugo-recent-post-item a img {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   border-radius: 3px;
   width: 100%;
   height: 100%;
@@ -5667,6 +5734,10 @@ a.comment-reply {
   top: 0;
   right: 0;
   color: var(--gray-800);
+  transition: all 0.4s;
+}
+a.comment-reply:hover {
+  color: var(--warning-500);
 }
 
 .fugo-input-field {
@@ -5716,7 +5787,7 @@ button#fugo-input-submit {
   background-color: var(--warning-500);
 }
 button#fugo-input-submit:hover {
-  color: var(--warning-500);
+  color: var(--gray-10);
   background-color: var(--gray-800);
 }
 
@@ -5801,6 +5872,80 @@ button#fugo-input-submit:hover {
   }
 }
 
+.fugo-default-content.contact-page {
+  margin-right: 50px;
+}
+@media (max-width: 1399px) {
+  .fugo-default-content.contact-page {
+    margin-right: 0;
+  }
+}
+
+.fugo-title {
+  display: flex;
+  justify-content: center;
+  color: #FFC947;
+  user-select: none;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 3px 3px black;
+}
+
+.fugo-preloader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: var(--gray-800);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fugo-spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.fugo-spinner svg {
+  width: 50%;
+  max-width: 5rem;
+  animation: rotate 3.6s linear infinite;
+}
+
+circle {
+  fill: none;
+  stroke: #9440f5;
+  stroke-width: 8px;
+  stroke-dasharray: 300;
+  animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+}
+
+@keyframes outline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
 .fugo-career-card {
   padding: 29px;
   border-radius: 10px;
@@ -5818,6 +5963,7 @@ button#fugo-input-submit:hover {
 }
 .fugo-career-time ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .fugo-career-time ul li {
@@ -6046,11 +6192,11 @@ button#fugo-input-submit:hover {
 .fugo-portfolio-btn {
   display: flex;
   justify-content: center;
-  margin-top: 56px;
+  margin-top: 40px;
 }
 @media (max-width: 991px) {
   .fugo-portfolio-btn {
-    margin-top: 26px;
+    margin-top: 20px;
   }
 }
 

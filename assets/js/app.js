@@ -35,8 +35,29 @@
 
   $(function () {
     /*--------------------------------------------------------------
+    FUGO PRELOADER JS INIT
+    --------------------------------------------------------------*/
+    $(".fugo-preloader").fadeOut(500);
+    /*--------------------------------------------------------------
+    FUGO SCROLL TOP JS INIT
+    --------------------------------------------------------------*/
+    //Scroll event
+
+    $(window).scroll(function () {
+      var scrolled = $(window).scrollTop();
+      if (scrolled > 200) $('.fugo-go-top').fadeIn('slow');
+      if (scrolled < 200) $('.fugo-go-top').fadeOut('slow');
+    }); //Click event
+
+    $('.fugo-go-top').click(function () {
+      $("html, body").animate({
+        scrollTop: "0"
+      }, 500);
+    });
+    /*--------------------------------------------------------------
     FUGO STICKY MENU JS INIT
     --------------------------------------------------------------*/
+
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > 50) {
         $('#sticky-menu').addClass('sticky-menu');
