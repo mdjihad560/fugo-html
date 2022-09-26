@@ -145,17 +145,16 @@
 }
 
 @media (min-width: 992px) {
-  .site-header--menu-right > .container-fluid .sub-menu.megamenu {
-    left: 100%;
-    transform: translateX(-100%) translateY(10px);
+  .site-header > .container-fluid .sub-menu.megamenu {
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
   }
 }
 
 @media (min-width: 992px) {
-  .site-header--menu-right > .container-fluid .nav-item.has-megamenu:hover > .sub-menu {
-    transform: translateX(-100%) translateY(-10px);
-    left: 100%;
-    margin-left: -20px;
+  .site-header > .container-fluid .nav-item.has-megamenu:hover > .sub-menu {
+    transform: translateX(-50%) translateY(-10px);
+    left: 50%;
   }
 }
 
@@ -368,8 +367,8 @@
   .site-menu-main .nav-link-item {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 
@@ -395,7 +394,7 @@
     border-radius: 6px;
 }
 .site-menu-main .sub-menu:before {
-    content: "";
+    content: none;
     width: 15px;
     height: 15px;
     background-color: #fff;
@@ -493,17 +492,17 @@
     opacity: 0;
     pointer-events: none;
   }
-  .site-menu-main .sub-menu.megamenu.megadropdown-center {
+  /* .site-menu-main .sub-menu.megamenu.megadropdown-center {
     transform: translateX(-50%) translateY(-10px);
-  }
-  .site-menu-main .sub-menu.megamenu.megadropdown-right {
+  } */
+  /* .site-menu-main .sub-menu.megamenu.megadropdown-right {
     right: 0%;
     transform: translateX(0%) translateY(10px);
-  }
-  .site-menu-main .sub-menu.megamenu.megadropdown-left {
+  } */
+  /* .site-menu-main .sub-menu.megamenu.megadropdown-left {
     left: 0%;
     transform: translateX(0%) translateY(10px);
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
@@ -519,8 +518,8 @@
 }
 
 .site-menu-main .sub-menu.megamenu .single-dropdown-block .mega-drop-menu-item {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: block;
 }
 
@@ -549,7 +548,7 @@
     padding-right: 10px;
   }
   .site-menu-main .sub-menu.megamenu .mega-drop-menu-item:hover {
-    color: #1787FC !important;
+    color: #FFC947 !important;
   }
 }
 
@@ -572,7 +571,7 @@
 
 @media (min-width: 992px) {
   li.nav-item-has-children:hover > .sub-menu {
-    margin-top: 0;
+    margin-top: 5px;
     visibility: visible;
     opacity: 1;
     z-index: 99;

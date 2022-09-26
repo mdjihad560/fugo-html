@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fugu</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!--- End favicon-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/icomoon-font.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/app.min.css" />
+</head>
+
+<body class="light">
+
+
+
+  <header class="site-header fugu--header-section fugu--header-two" id="sticky-menu">
+    <div class="container-fluid">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="brand-logo rt-mr-20">
+          <a href="index.html">
+            <img src="assets/images/logo/logo-black.svg" alt="" class="light-version-logo">
+          </a>
+        </div>
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Demo <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-1">
+                  <li class="sub-menu--item">
+                    <a href="index.html">home 01</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index-2.html">home 02</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index-3.html">home 03</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index-4.html">home 04</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index-5.html">home 05</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-2">
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">About <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu shape-none" id="submenu-3">
+                      <li class="sub-menu--item">
+                        <a href="about-dark.html">About Dark</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="about-us.html">About light 01</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="about-light.html">About light 02</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">blog light <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu shape-none" id="submenu-4">
+                      <li class="sub-menu--item">
+                        <a href="blog-light.html">blog light</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog.html">blog light sidebar 01</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog-light-sidebar.html">blog light sidebar 02</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-blog.html">blog light details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">blog dark <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu shape-none" id="submenu-5">
+                      <li class="sub-menu--item">
+                        <a href="blog-dark.html">blog dark</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog-dark-sidebar.html">blog dark sidebar</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-dark-blog.html">blog dark details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Service<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-6">
+                      <li class="sub-menu--item">
+                        <a href="service.html">service</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-service.html">single service</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Team<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-7">
+                      <li class="sub-menu--item">
+                        <a href="team-dark.html">Team dark</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="team.html">Team light 01</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="team-light.html">Team light 02</a>
+                      </li>
+
+                      <li class="sub-menu--item">
+                        <a href="single-team.html">single team</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Pricing<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-8">
+                      <li class="sub-menu--item">
+                        <a href="pricing-01.html">pricing 01</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="pricing-02.html">pricing 02</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Career<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-9">
+                      <li class="sub-menu--item">
+                        <a href="career.html">Career</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-career.html">single Career</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Portfolio<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-10">
+                      <li class="sub-menu--item">
+                        <a href="portfolio-01.html">Portfolio Classic</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-02.html">Portfolio Minimal</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-03.html">Portfolio Modern</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-portfolio.html">Single Portfolio</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-11">
+                      <li class="sub-menu--item">
+                        <a href="faq.html">faq</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="error-404.html">Error 404</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="testimonial.html">testimonial</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="coming-soon.html">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-has-children has-megamenu">
+                <a href="#" class="nav-link-item drop-trigger">elements <i class="fas fa-angle-down"></i></a>
+                <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
+                  <ul class="col-lg-12 row-lg list-unstyled py-lg-7">
+                    <li class="col-lg-3">
+                      <div class="single-dropdown-block">
+                        <h3>about Style</h3>
+                        <a href="about-dark.html" class="mega-drop-menu-item sub-menu--item">About us Dark</a>
+                        <a href="about-us.html" class="mega-drop-menu-item sub-menu--item">about us light 01</a>
+                        <a href="about-light.html" class="mega-drop-menu-item sub-menu--item">about us light 01</a>
+                      </div>
+                    </li>
+                    <li class="col-lg-3">
+                      <div class="single-dropdown-block">
+                        <h3>blog Style</h3>
+                        <a class="mega-drop-menu-item sub-menu--item" href="blog-dark.html">blog dark</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="blog-dark-sidebar.html">blog dark sidebar</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="single-dark-blog.html">blog dark details</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="blog-light.html">blog light</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="blog.html">blog light sidebar 01</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="blog-light-sidebar.html">blog light sidebar 02</a>
+                        <a class="mega-drop-menu-item sub-menu--item" href="single-blog.html">blog light details</a>
+                      </div>
+                    </li>
+                    <li class="col-lg-3">
+                      <div class="single-dropdown-block">
+                        <h3>Masonry Style</h3>
+                        <a href="portfolio-01.html" class="mega-drop-menu-item sub-menu--item">Portfolio Classic </a>
+                        <a href="portfolio-02.html" class="mega-drop-menu-item sub-menu--item">Portfolio Minimal</a>
+                        <a href="portfolio-03.html" class="mega-drop-menu-item sub-menu--item">Portfolio Modern</a>
+                        <a href="single-portfolio.html" class="mega-drop-menu-item sub-menu--item d-block">portfolio details</a>
+                      </div>
+                    </li>
+                    <li class="col-lg-3">
+                      <div class="single-dropdown-block">
+                        <h3>contact style</h3>
+                        <a href="contact-dark.html" class="mega-drop-menu-item sub-menu--item d-block">contact dark</a>
+                        <a href="contact.html" class="mega-drop-menu-item sub-menu--item d-block">contact light 01</a>
+                        <a href="contact-light.html" class="mega-drop-menu-item sub-menu--item d-block">contact light 02</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Blog <i
+                  class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-12">
+                  <li class="sub-menu--item">
+                    <a href="blog-dark.html">blog dark</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog-dark-sidebar.html">blog dark sidebar</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="single-dark-blog.html">blog dark details</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog-light.html">blog light</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog.html">blog light sidebar 01</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog-light-sidebar.html">blog light sidebar 02</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="single-blog.html">blog light details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Contact us <i
+                  class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-13">
+                  <li class="sub-menu--item">
+                    <a href="contact-dark.html">contact dark</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="contact.html">contact light 01</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="contact-light.html">contact light 02</a>
+                  </li>
+
+
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+          <a class="fugu--btn fugu--menu-btn2" href="contact.html">
+            Connect Wallet
+          </a>
+        </div>
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+      </nav>
+    </div>
+  </header>
+  <!--End landex-header-section -->
+
+  <div class="fugu--inner-section light-version bg-white">
+    <div class="container">
+      <div class="fugu--breadcrumbs-section">
+        <div class="fugu--breadcrumbs-data center-content">
+          <h1 class="wow fadeInUpX" data-wow-delay="0s">Get in touch with us</h1>
+          <p class="wow fadeInUpX" data-wow-delay=".10s">We are here to help. Just send us a message to get any of your questions answered and we will get back to you within 24-48 hours or as soon as possible.</p>
+        </div>
+      </div>
+      <!-- End breadcrumb -->
+    </div>
+  </div>
+  <!-- end inner section -->
+
+  <div class="fugu--contact-section white-version">
+    <div class="container">
+      <div class="fugu--contact-column">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="fugu--contact-info">
+              <h4>Reach out to us at:</h4>
+              <ul>
+                <li><a href=""> <span><img src="assets/images/svg2/phone2.svg" alt=""></span> +008-245-5667</a></li>
+                <li><a href=""><span><img src="assets/images/svg2/mail2.svg" alt=""></span>mail@example.com</a></li>
+                <li><a href=""><span><img src="assets/images/svg2/map2.svg" alt=""></span>389 Ranchview, California 62639</a></li>
+              </ul>
+            </div>
+            <div class="fugu--contact-info fugu--contact-info2">
+              <h4>Opening hours:</h4>
+              <ul>
+                <li><a href=""> <span><img src="assets/images/svg2/clock.svg" alt=""></span> Monday to Thursday: 7:00 – 15:00
+                    Friday to Saturday: 7:00 – 15:00
+                    Sunday: CLOSED</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="fugu--contact-form wow fadeInUpX">
+              <h3>Leave a Reply:</h3>
+              <p>Your email address will not be published. Required fields are marked*</p>
+              <form action="#">
+                <div class="fugu--comment-field">
+                  <input type="text" placeholder="Your Name*">
+                </div>
+                <div class="fugu--comment-field">
+                  <input type="text" placeholder="Your Email*">
+                </div>
+                <div class="fugu--comment-field">
+                  <textarea name="textarea" placeholder="Write your comment*"></textarea>
+                </div>
+                <button id="fugu--form-submit-btn" type="submit">Post Comment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End contact section -->
+
+  <div class="fugu--feature-section fugu--section-padding2 white-version">
+    <div class="container">
+      <div class="fugu--section-title">
+        <div class="fugu--default-content content-sm content-black">
+          <h2>Prefer to reach out directly?</h2>
+          <p>Nexto is a universal marketplace that has been working with NFTS Art since 2002. we are ready to change the world with NFTs!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="fugu--iconbox-wrap fugu--iconbox-wrap3 fugu--iconbox-wrap5 wow fadeInUpX" data-wow-delay="0s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/contact/icon01.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Careers</h4>
+              <p>the job or series of jobs that you do during your working making progress</p>
+              <a href="">Join our team<img src="assets/images/svg2/arrow-right-black.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="fugu--iconbox-wrap fugu--iconbox-wrap3 fugu--iconbox-wrap5 wow fadeInUpX" data-wow-delay=".10s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/contact/icon02.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Help & Support</h4>
+              <p>Help and support desk support refers to the process of information support</p>
+              <a href="">Contact support<img src="assets/images/svg2/arrow-right-black.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="fugu--iconbox-wrap fugu--iconbox-wrap3 fugu--iconbox-wrap5 wow fadeInUpX" data-wow-delay=".20s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/contact/icon03.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Ask Question</h4>
+              <p>Questions is a game for people to get to know each other better and played</p>
+              <a href="">Ask questions<img src="assets/images/svg2/arrow-right-black.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="fugu--faq-section fugu--section-padding white-version">
+    <div class="container">
+      <div class="fugu--section-title">
+        <div class="fugu--default-content content-sm content-black">
+          <h2>If you need to know anything about NFTs, just ask us!</h2>
+        </div>
+      </div>
+      <div class="fugu--accordion-one accordion-five" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is an NFT?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What makes an NFT valuable?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What’s the connection between NFTs crypto?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Are NFTs the future of art and collectibles?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What questions remain about NFTs?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End -->
+
+  <div class="fugu-go-top">
+    <img src="assets/images/svg/arrow-black-right.svg" alt="">
+  </div>
+
+
+
+
+  <!-- Footer  -->
+
+  <footer class="fugu--foote2-section" style="background-image: url('assets/images/all-img/v4/footer-bg.png')">
+    <div class="container">
+      <div class="fugu--footer-top">
+        <div class="fugu--default-content content-black">
+          <h2 class="wow fadeInUpX" data-wow-delay="0s">Join our NFTs community</h2>
+          <p class="wow fadeInUpX" data-wow-delay="0.15s">Meet artists & collectors for platform updates and get dozens of our extraordinary art collections in the world’s largest NFT marketplace.</p>
+          <div class="fugu--btn-wrap wow fadeInUpX" data-wow-delay="0.25s">
+            <a class="fugu--btn bg-orange" href="#">Join Our Discord</a>
+          </div>
+          <div class="fugu--star">
+            <img src="assets/images/all-img/v4/star-black.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="fugu--footer-middle">
+        <div class="row">
+          <div class="col-xl-3 col-lg-2">
+            <div class="fugu--footer-logo">
+              <img src="assets/images/logo/logo-black.svg" alt="">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-8">
+            <div class="fugu--footer-menu2">
+              <ul>
+                <li><a href="">Demos</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2">
+            <div class="fugu--social-icon fugu--social-icon2">
+              <ul>
+                <li><a href=""><img src="assets/images/social2/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="assets/images/social2/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="assets/images/social2/github.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fugu--footer-bottom fugu--footer-bottom2">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>&copy; Copyright 2022, All Rights Reserved by Mthemeus</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="fugu--footer-menu">
+              <ul>
+                <li><a href="">Terms</a></li>
+                <li><a href=""> Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="fugu-preloader">
+    <div class="fugu-spinner">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" />
+      </svg>
+    </div>
+    <div class="fugu-title">loading...</div>
+  </div>
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
