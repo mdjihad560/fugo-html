@@ -2605,7 +2605,7 @@ footer.fugu-foote2-section .fugu-default-content .fugu-app-btn-wrap {
 }
 .fugu-footer-bottom .fugu-footer-menu ul li::after {
   content: " ";
-  top: 10px;
+  top: 14px;
   right: 5px;
   border-radius: 50%;
   width: 5px;
@@ -2742,7 +2742,7 @@ footer.fugu--footer-section {
 }
 .fugu--footer-bottom .fugu--footer-menu ul li::after {
   content: " ";
-  top: 10px;
+  top: 14px;
   right: 5px;
   border-radius: 50%;
   width: 5px;
