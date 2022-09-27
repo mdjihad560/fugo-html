@@ -394,7 +394,7 @@
     border-radius: 6px;
 }
 .site-menu-main .sub-menu:before {
-    content: none;
+    content: '';
     width: 15px;
     height: 15px;
     background-color: #fff;
@@ -405,6 +405,9 @@
 45deg
 ) translatey(-11px);
     z-index: 8;
+}
+.sub-menu.megamenu:before{
+  content: none;
 }
 .site-menu-main .sub-menu.shape-none:before{
   content: none;
@@ -513,13 +516,13 @@
 
 @media (min-width: 1366px) {
   .site-menu-main .sub-menu.megamenu {
-    min-width: 1300px;
+    min-width: 900px;
   }
 }
 
 .site-menu-main .sub-menu.megamenu .single-dropdown-block .mega-drop-menu-item {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
 }
 
