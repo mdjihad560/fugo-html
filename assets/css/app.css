@@ -2382,6 +2382,20 @@ header.fugu--header-section.fugu--header-two.sticky-menu {
   background-color: white;
 }
 
+.fugu-responsive-btn {
+  display: none;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+.fugu-responsive-btn .fugu-btn.fugu-header-btn {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .fugu-responsive-btn {
+    display: block;
+  }
+}
+
 footer.fugu-footer-section {
   background-color: var(--gray-800);
   padding: 100px 0 95px;
