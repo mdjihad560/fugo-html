@@ -21,6 +21,7 @@
 --gray-900: #26242C;
 --gray-800: #13111A;
 --gray-700: #E1E1E1;
+--gray-600: #211D2E;
 --gray-10: #fff;
 --primary-600: #724FE5;
 --primary-500: #2C04FE;
@@ -896,6 +897,34 @@ blockquote {
 
 .hover\:border-gray-700:hover {
   border-color: #E1E1E1 !important;
+}
+
+.text-gray-600 {
+  color: #211D2E !important;
+}
+
+.bg-gray-600 {
+  background-color: #211D2E !important;
+}
+
+.border-gray-600 {
+  border-color: #211D2E !important;
+}
+
+.hoverbg-gray-600:hover {
+  background-color: #211D2E !important;
+}
+
+.hover\:bg-gray-600:hover {
+  background-color: #211D2E !important;
+}
+
+.hover\:text-gray-600:hover {
+  color: #211D2E !important;
+}
+
+.hover\:border-gray-600:hover {
+  border-color: #211D2E !important;
 }
 
 .text-gray-10 {
@@ -2388,7 +2417,8 @@ header.fugu--header-section.fugu--header-two.sticky-menu {
   padding: 0 15px;
 }
 .fugu-responsive-btn .fugu-btn.fugu-header-btn {
-  margin: 0;
+  margin: 25px 0 0;
+  padding: 0 33px;
 }
 @media (max-width: 991px) {
   .fugu-responsive-btn {
@@ -7323,6 +7353,128 @@ a.fugu-pricing-btn.active {
   transform: rotate(44.51deg);
   position: absolute;
   background-color: var(--warning-500);
+}
+
+.fugu-pricing-dark .pricing-btn label {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .pricing-btn .btn-toggle {
+  background-color: #7D41EA !important;
+  background-image: url(../images/all-img/service/circle-bg2.png);
+}
+.fugu-pricing-dark .pricing-btn .btn-toggle:checked {
+  background-color: #7D41EA !important;
+  background-image: url(../images/all-img/service/circle-bg2.png);
+}
+.fugu-pricing-dark .fugu-pricing-header h5 {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .fugu-pricing-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-price,
+.fugu-pricing-dark .fugu-pricing-currency,
+.fugu-pricing-dark p.bottom_text {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .fugu--outline-btn {
+  display: block;
+  margin-bottom: 40px;
+}
+.fugu-pricing-dark .fugu--outline-btn span {
+  padding: 12.5px 38px;
+  background-color: var(--gray-600);
+}
+.fugu-pricing-dark .fugu--outline-btn span:hover {
+  background-color: transparent;
+}
+.fugu-pricing-dark .fugu-pricing-body ul li {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-pricing-label {
+  color: var(--gray-10);
+  background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+}
+.fugu-pricing-dark .fugu-default-content h2 {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .fugu-default-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-accordion-item {
+  border-bottom: 1px solid var(--gray-10);
+}
+.fugu-pricing-dark .fugu-accordion-item h4 {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .fugu-accordion-item p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-accordion-item:last-child {
+  border: none;
+}
+.fugu-pricing-dark a.fugu-faq-btn {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark a.fugu-faq-btn:hover {
+  color: var(--warning-500);
+}
+.fugu-pricing-dark.fugu-client-section {
+  padding: 0;
+}
+.fugu-pricing-dark .fugu-client-title h5 {
+  color: var(--gray-10);
+}
+.fugu-pricing-dark .fugu-pricing-wrap.fugu-pricing-wrap3 {
+  background-color: var(--gray-600);
+}
+.fugu-pricing-dark .fugu-pricing-wrap.fugu-pricing-wrap3 p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-pricing-wrap.fugu-pricing-wrap3 .fugu-pricing-body {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fugu-pricing-dark .fugu-pricing-wrap.fugu-pricing-wrap3 .fugu-pricing-body span {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fugu-pricing-dark .fugu-pricing-wrap.fugu-pricing-wrap3 .fugu-pricing-body li {
+  color: #fff;
+}
+
+.fugu-privacy-policy-wrap p {
+  color: var(--gray-800);
+}
+.fugu-privacy-policy-wrap ul {
+  margin-bottom: 40px;
+}
+.fugu-privacy-policy-wrap ul li {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  color: var(--gray-800);
+}
+.fugu-privacy-policy-wrap ul li:before {
+  content: "";
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--gray-800);
+}
+.fugu-privacy-policy-wrap ul li:last-child {
+  padding-bottom: 0;
+}
+
+.fugu-privacy-policy-dark .fugu-privacy-policy-wrap p, .fugu-privacy-policy-dark .fugu-privacy-policy-wrap h2, .fugu-privacy-policy-dark .fugu-privacy-policy-wrap h4 {
+  color: var(--gray-10);
+}
+.fugu-privacy-policy-dark .fugu-privacy-policy-wrap ul li {
+  color: var(--gray-10);
+}
+.fugu-privacy-policy-dark .fugu-privacy-policy-wrap ul li:before {
+  background-color: var(--gray-10);
 }
 
 .fugu--circle-shape {
